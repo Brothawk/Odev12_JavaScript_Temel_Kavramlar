@@ -1,0 +1,170 @@
+Bu kod, car adlı bir değişkene basit bir değer (Fiat) atar :
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+
+var car = "Fiat";
+document.getElementById("demo").innerHTML = car;
+</script>
+
+</body>
+</html>
+
+
+SONUÇ:
+
+Fiat
+
+-----------------------------------------------------
+
+Bu kod, car adlı bir değişkene birçok değer (Fiat, 500, beyaz) atar :
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+var car = {type:"Fiat", model:"500", color:"white"};
+
+// Display some data from the object:
+document.getElementById("demo").innerHTML = "Arabanın markası " + car.type;
+</script>
+
+</body>
+</html>
+
+SONUÇ:
+
+Arabanın markası Fiat
+
+-----------------------------------------------------
+
+
+Nesne Tanımı
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+</body>
+</html>
+
+
+SONUÇ:
+
+John is 50 years old
+
+-----------------------------------------------------
+
+
+Boşluklar ve satır kesmeleri önemli değildir. Bir nesne tanımı birden fazla satıra yayılabilir:
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+var person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+
+// Display some data from the object:
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+</body>
+</html>
+
+SONUÇ:
+
+John is 50 years old.
+
+-----------------------------------------------------
+
+
+Nesne Özelliklerine Erişme
+
+Nesne özelliklerine iki şekilde erişebilirsiniz:
+
+objectName.propertyName
+veya
+
+objectName["propertyName"]
+
+
+
+1)
+
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     :  5566
+};
+// Display some data from the object:
+document.getElementById("demo").innerHTML =
+person.firstName + " " + person.lastName;
+</script>
+
+</body>
+</html>
+
+
+SONUC:
+John Doe
+
+
+
+
+2)
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     :  5566
+};
+document.getElementById("demo").innerHTML =
+person["firstName"] + " " + person["lastName"];
+</script>
+
+</body>
+</html>
+
+SONUC:
+John Doe
+
+-----------------------------------------------------
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Baran İlgün Tanıtım</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script type="text/javascript">
+		function aritmetik_islemler(){
+    		document.getElementById("content_frame").src = "./txt/aritmetik_islemler.txt";
+		}
+		function array_sort(){
+    		document.getElementById("content_frame").src = "./txt/array_sort.txt";
+		}
+		function arrays(){
+    		document.getElementById("content_frame").src = "./txt/diziler_arrays.txt";
+		}
+		function functions(){
+    		document.getElementById("content_frame").src = "./txt/fonksiyonlar.txt";
+		}
+		function if_kosullar(){
+    		document.getElementById("content_frame").src = "./txt/if_kosullar.txt";
+		}
+		function objects(){
+    		document.getElementById("content_frame").src = "./txt/nesneler_objects.txt";
+		}
+		function string(){
+    		document.getElementById("content_frame").src = "./txt/string_islemleri.txt";
+		}
+		</script>
+
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<h1>Ödevler</h1>
+<h3><font color="#66BB6A"> Not= </font></b>Yazıların üstüne tıklanınca kodlar gösterilir.Bu kısımda bana yardımcı olan arkadaşım Ozan Hazar Erdoğan'a teşekkür ederim. </h3>
+	</div>
+	<div id="sidebar">
+		<ul>
+			<li><a href="index.html">Temel ve İletişim Bilgilerim</a></li>
+			<li><a href="types.html">Eğitimim</a></li>
+			<li><a href="safety.html">Kariyer Hedefim</a></li>
+			<li><a href="equipment.html">İlgi ve Hobilerim</a></li>
+			<li><a href="where.html">Ödev ve Örnekler</a></li>
+		</ul>
+	</div>
+	<div id="main">
+		<div id="mainek">
+			<h3 id="where">Javascript Temel Kavramlar</h3>
+  <p><b>Lütfen aşağıda bulunan konuların üstüne tıklayınız.</b></p>
+			<div id="txt">
+				<button onclick="aritmetik_islemler();">Aritmetik İşlemler</button>
+				<button onclick="array_sort();">Array Sıralama</button>
+				<button onclick="arrays();">Diziler</button>
+				<button onclick="functions();">Fonksiyonlar</button>
+				<button onclick="if_kosullar();">İf Koşulları</button>
+				<button onclick="objects();">Nesneler(Objeler)</button>
+				<button onclick="string();">String İşlemleri</button>
+			</div>
+			<div id="list">
+			<iframe id="content_frame" src="" frameborder="0"></iframe>
+			</div>
+	</div>
+	</div>	
+	<div id="footer">
+		
+	</div>
+</div>
+</body>
+</html>

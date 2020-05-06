@@ -1,0 +1,136 @@
+"Bir şey" çağIrdığında bir JavaScript işlevi yürütülür (çağırır).
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+document.getElementById("demo").innerHTML = myFunction(4, 3);
+</script>
+
+</body>
+</html>
+
+SONUÇ:
+12
+
+----------------------------------------------------------------------------
+İki sayının çarpımını hesaplayın ve sonucu döndürün:
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var x = myFunction(4, 3);
+document.getElementById("demo").innerHTML = x;
+
+function myFunction(a, b) {
+  return a * b;
+}
+</script>
+
+</body>
+</html>
+
+SONUÇ:
+12
+
+----------------------------------------------------------------------------
+Fahrenheit'i Celsius'a dönüştürün:
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+function toCelsius(f) {
+  return (5/9) * (f-32);
+}
+document.getElementById("demo").innerHTML = toCelsius(77);
+</script>
+
+</body>
+</html>
+
+SONUÇ:
+25
+
+----------------------------------------------------------------------------
+
+Bir işlevin dönüş değerini depolamak için bir değişken kullanmak yerine:
+
+var x = toCelsius(77);
+var text = "The temperature is " + x + " Celsius";
+İşlevi doğrudan değişken bir değer olarak kullanabilirsiniz:
+
+var text = "The temperature is " + toCelsius(77) + " Celsius";
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"The temperature is " + toCelsius(77) + " Celsius";
+
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+} 
+</script>
+
+</body>
+</html>
+
+SONUÇ:
+The temperature is 25 Celsius
+
+----------------------------------------------------------------------------
+
+Yerel Değişkenler
+JavaScript işlevi içinde bildirilen değişkenler , işleve YEREL olur.
+
+Yerel değişkenlere sadece fonksiyon içinden erişilebilir.
+
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>Outside myFunction() carName is undefined.</p>
+
+<p id="demo1"></p>
+
+<p id="demo2"></p>
+
+<script>
+myFunction();
+
+function myFunction() {
+  var carName = "Volvo";
+  document.getElementById("demo1").innerHTML =
+  typeof carName + " " + carName;
+}
+
+document.getElementById("demo2").innerHTML =
+typeof carName;
+</script>
+
+</body>
+</html>
+
+SONUÇ:
+
+JavaScript Functions
+Outside myFunction() carName is undefined.
+
+string Volvo
+
+undefined

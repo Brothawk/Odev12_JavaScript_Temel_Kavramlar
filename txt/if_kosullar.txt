@@ -1,0 +1,29 @@
+Saat 18: 00'den küçükse "İyi günler" yazdırma:
+
+if (hour < 18) {
+  greeting = "İyi Günler";
+}
+
+
+Saat 18'den küçükse, "İyi günler" selamı, aksi halde "İyi akşamlar" yazdırma:
+
+if (hour < 18) {
+  greeting = "İyi Günler";
+} else {
+  greeting = "İyi Akşamlar";
+}
+
+
+
+Saat 10:00'dan küçükse, "Günaydın" karşılaması oluşturun, değilse zaman 20:00'den azsa, "İyi günler" karşılaması oluşturun, aksi takdirde "İyi akşamlar":
+
+if (time < 10) {
+  greeting = "Günaydın";
+} else if (time < 20) {
+  greeting = "İyi günler";
+} else {
+  greeting = "İyi akşamlar";
+}
+Selamlamanın sonucu:
+
+İyi Günler

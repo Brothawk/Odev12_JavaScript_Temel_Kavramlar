@@ -1,0 +1,153 @@
+JavaScript dizesi, tırnak içine yazılmış sıfır veya daha fazla karakterdir.
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var x = "John Doe";  // String written inside quotes
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
+
+SONUÇ:
+
+John Doe
+
+--------------------------------------------
+Tek veya çift tırnak kullanabilirsiniz.
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+
+var carName1 = "Volvo XC60"; // Double quotes
+var carName2 = 'Volvo XC60'; // Single quotes
+
+document.getElementById("demo").innerHTML =
+carName1 + " " + carName2; 
+
+</script>
+
+</body>
+</html>
+
+SONUÇ:
+Volvo XC60 Volvo XC60
+
+--------------------------------------------
+Dizeyi çevreleyen tırnak işaretleriyle eşleşmedikleri sürece, bir dizenin içindeki tırnak işaretlerini kullanabilirsiniz:
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+var answer1 = "It's alright";
+var answer2 = "He is called 'Johnny'";
+var answer3 = 'He is called "Johnny"'; 
+
+document.getElementById("demo").innerHTML =
+answer1 + "<br>" + answer2 + "<br>" + answer3; 
+</script>
+
+</body>
+</html>
+
+SONUÇ:
+
+It's alright
+He is called 'Johnny'
+He is called "Johnny"
+
+--------------------------------------------
+IP uzunluğu
+Bir dizenin uzunluğunu bulmak için built-in lengthözelliğini kullanın:
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo").innerHTML = txt.length;
+</script>
+
+</body>
+</html>
+
+
+SONUÇ:
+26
+
+--------------------------------------------
+
+Dizi \"  , bir dizeye çift tırnak ekler:
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var x = "We are the so-called \"Vikings\" from the north.";
+document.getElementById("demo").innerHTML = x; 
+</script>
+
+</body>
+</html>
+
+SONUÇ:
+
+We are the so-called "Vikings" from the north.
+
+--------------------------------------------
+
+Dizi \'  , bir dizeye tek bir tırnak ekler:
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var x = 'It\'s alright.';
+document.getElementById("demo").innerHTML = x; 
+</script>
+
+</body>
+</html>
+
+
+SONUÇ:
+It's alright.
+--------------------------------------------
+
+Uzun Kod Satırlarını Kırmak
+En iyi okunabilirlik için, programcılar genellikle 80 karakterden uzun kod satırlarından kaçınmayı sever.
+
+Bir JavaScript ifadesi bir satıra sığmıyorsa, bunu kırmak için en iyi yer bir operatörden sonradır:
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"Hello Dolly!";
+</script>
+
+</body>
+</html>
+
+
+SONUÇ:
+
+Hello Dolly!
+--------------------------------------------

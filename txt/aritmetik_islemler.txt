@@ -1,0 +1,286 @@
+Aritmetik işlemler
+Tipik bir aritmetik işlem iki sayı üzerinde çalışır.
+
+İki sayı değişmez olabilir:
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var x = 100 + 50;
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
+
+SONUÇ:
+
+150
+
+
+veya değişkenler:
+
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+var a = 100;
+var b = 50;
+var x = a + b;
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
+
+
+SONUÇ:
+
+150
+
+
+veya ifadeler:
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var a = 3;
+var x = (100 + 50) * a;
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
+
+
+SONUÇ:
+450
+-------------------------------------------------------------
+
+
+Ekleme
+İlave operatörü ( +) numaralarını ekler:
+
+
+
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+var x = 5;
+var y = 2;
+var z = x + y;
+document.getElementById("demo").innerHTML = z;
+</script>
+
+</body>
+</html>
+
+
+SONUÇ:
+7
+
+-------------------------------------------------------------
+
+Çıkarma
+Çıkarma operatörü ( -) sayıları çıkarır.
+
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var x = 5;
+var y = 2;
+var z = x - y;
+document.getElementById("demo").innerHTML = z;
+</script>
+
+</body>
+</html>
+
+
+SONUÇ:
+7
+
+
+-------------------------------------------------------------
+
+
+Çarpma
+Çarpma operatörü ( *) çarpar sayılar.
+
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var x = 5;
+var y = 2;
+var z = x * y;
+document.getElementById("demo").innerHTML = z;
+</script>
+
+</body>
+</html>
+
+
+SONUÇ:
+10
+
+-------------------------------------------------------------
+
+Bölme
+Bölme operatörü ( /) numaraları böler.
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var x = 5;
+var y = 2;
+var z = x / y;
+document.getElementById("demo").innerHTML = z;
+</script>
+
+</body>
+</html>
+
+SONUÇ:
+
+2.5
+
+
+-------------------------------------------------------------
+
+kalan
+Modülü operatörü ( %) bölmede kalan döndürür.
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var x = 5;
+var y = 2;
+var z = x % y;
+document.getElementById("demo").innerHTML = z;
+</script>
+
+</body>
+</html>
+
+SONUÇ:
+
+1
+
+
+-------------------------------------------------------------
+
+
+Arttırım
+Arttırma operatörü ( ++) numaraları artırır
+
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var x = 5;
+x++;
+var z = x;
+document.getElementById("demo").innerHTML = z;
+</script>
+
+</body>
+</html>
+
+
+SONUÇ:
+
+6
+
+
+-------------------------------------------------------------
+
+
+eksiltim
+Eksiltme operatörü ( --) numaraları azaltır.
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var x = 5;
+x--;
+var z = x;
+document.getElementById("demo").innerHTML = z;
+</script>
+
+</body>
+</html>
+
+
+SONUÇ:
+
+4
+
+
+
+-------------------------------------------------------------
+
+Üs
+Üs operatörü ( **) ikinci işlenen gücüne ilk işlenen yükseltir.
+
+
+<html>
+<body>
+
+<h2>The ** Operator</h2>
+
+<p id="demo"></p>
+
+<script>
+var x = 5;
+document.getElementById("demo").innerHTML = x ** 2;
+</script>
+
+</body>
+</html>
+
+
+SONUÇ:
+
+25
+
+
+
+
+
+
+
+
+
